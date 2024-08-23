@@ -1,12 +1,22 @@
 import { useState } from "react";
 
 function App() {
-  let [counter, setcounter] = useState(23);
+  let [counter, setcounter] = useState(10);
   function addValue(){
-    setcounter(counter + 1)
+    if(counter == 20){
+      setcounter(counter)
+    }
+    else{
+      setcounter(counter + 1)
+    }
   }
   function removeValue(){
-    setcounter(counter - 1)
+    if(counter == 0){
+      setcounter(counter)
+    }
+    else{
+      setcounter(counter - 1)
+    }
   }
   return (
     <>
