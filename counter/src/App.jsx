@@ -4,18 +4,18 @@ function App() {
   let [counter, setcounter] = useState(10);
   function addValue(){
     if(counter == 20){
-      setcounter(counter)
+      setcounter(counter);
     }
     else{
-      setcounter(counter + 1)
+      setcounter(counter + 1);
     }
   }
   function removeValue(){
     if(counter == 0){
-      setcounter(counter)
+      setcounter(counter);
     }
     else{
-      setcounter(counter - 1)
+      setcounter(counter - 1);
     }
   }
   return (

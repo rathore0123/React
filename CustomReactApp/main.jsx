@@ -5,10 +5,10 @@ function CustomRender(reactElement, root){
         if(prop === "children"){
             continue
         }
-        elem.setAttribute(prop, reactElement.props[prop])
+        elem.setAttribute(prop, reactElement.props[prop]);
     }
     elem.innerHTML = reactElement.children;
-    root.append(elem)
+    root.append(elem);
 }
 const reactElement = {
     type: 'a',
@@ -19,4 +19,4 @@ const reactElement = {
     children: "Click Me to Visit Google"
 };
 
-CustomRender(reactElement, root)
+CustomRender(reactElement, root);

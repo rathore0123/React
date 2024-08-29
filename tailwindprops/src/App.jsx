@@ -3,7 +3,7 @@ import Card from './Card.jsx'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
   let arr = [1,2,3,4,5]
   return (
     <>

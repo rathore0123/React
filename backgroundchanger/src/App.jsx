@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 
 
 function App() {
-  const [color, setColor] = useState("olive")
+  const [color, setColor] = useState("olive");
 
   function Button ({color}){
     return(
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div className="screen h-screen w-screen" style={{backgroundColor: color}}>
-        <h1 className='text-4xl font-bold text-white text-center absolute bottom-0 w-screen py-2 text-orange-400 underline'>Background Changer</h1>
+        <h1 className='text-4xl font-bold text-white text-center absolute bottom-0 w-screen py-2 underline'>Background Changer</h1>
         <div className="btn-container bg-white rounded-full p-2 flex gap-2 justify-around">
           <Button color="red" />
           <Button color="pink" />
